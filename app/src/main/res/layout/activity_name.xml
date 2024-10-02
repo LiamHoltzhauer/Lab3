@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- TextView to welcome the user -->
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="24sp"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Horizontal layout for the buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- Button to confirm the name -->
+            <Button
+                android:id="@+id/thankYouButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thank You"
+                android:layout_marginEnd="16dp"/>
+
+            <!-- Button to decline the name -->
+            <Button
+                android:id="@+id/dontCallMeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don’t call me that"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
